@@ -1,0 +1,128 @@
+main {
+  line-height: 1.5;
+  font-family: sans-serif;
+}
+
+.nav-link {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: black;
+}
+
+header {
+  padding-top: 15px;
+  font-size: 30px;
+  font-family: sans-serif;
+  border-radius: 2px;
+  color: #8BBEB2;
+}
+
+p {
+  border-left: outset 5px #E6F9AF;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#navbar {
+  position: fixed;
+  background-color: #0d1b2a ;
+  border-radius: 5px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  height: 100%;
+  width: 300px;
+  margin: auto;
+  padding: 10px 0px;
+ box-shadow: #18314F 5px 0px, #384E77 10px 0px, #8BBEB2 15px 0px, #E6F9AF 20px 0px;
+}
+
+#navbar li {
+  display: block;
+  list-style: none;
+  margin: 0px 5px;
+  text-align: center;
+  text-decoration: none;
+  font-family: sans-serif;
+  padding-top: 10px;
+  background-image: linear-gradient(to right, #8BBEB2 , #E6F9AF);
+  width: 200px;
+  height: 35px;
+  border-radius: 5px;
+}
+
+a:visited {
+  color: gray;
+}
+
+a:hover {
+  color: #8BBEB2;
+}
+
+#description {
+  text-align: center;
+  font-size: 1.8em;
+  padding-bottom: 20px;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 330px;
+  padding-right: 20px;
+  height: 100%;
+}
+
+code {
+  background-color: #E6F9AF;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-family: sans-serif;
+}
+
+.zoom {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.2s;
+  width: 200px;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+  margin-left: 100px;
+  
+}
+
+@media only screen and (max-width: 815px) {
+  #navbar {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 0px;
+    z-index: 1;
+    overflow-x: hidden;
+    height: 400px;
+    width: 100%;
+    box-shadow: #18314F 0px 0px 0px 5px, #384E77 0px 0px 0px 10px, #8BBEB2 0px 0px 0px 15px, #E6F9AF 0px 0px 0px 20px;
+    
+  }
+  .page-wrapper {
+    padding-top: 450px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100%;
+  }
+
+  img {
+    visibility: hidden;
+  }
+}
